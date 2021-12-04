@@ -3,6 +3,6 @@ Anomaly detection in epidemiological malaria data. We detect unusual events in t
 
 To execute:
 
-1. Open Commnd prompt 
+1. Open Command prompt 
 2. Navigate to the folder containing the files
 3. Run: streamlit run anomaly.py
