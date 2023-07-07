@@ -7,7 +7,7 @@ To execute:
 2. Navigate to the folder containing the files
 3. Run: streamlit run anomaly.py
 
-## Abstract to the Accepted journal paper
+## Abstract to the Published journal paper (https://www.mdpi.com/2227-9032/11/13/1896) 
 
 Disease surveillance is used to monitor ongoing control activities, detect early outbreaks,
 and inform intervention priorities and policies. However, data from disease surveillance that could be
