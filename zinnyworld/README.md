@@ -36,3 +36,7 @@ Then open: `http://localhost:8080/wireframes/index.html`.
 - Admin dashboard: products/orders/customers/stocks/reports
 - Reviews/ratings, discount codes, low-stock alerts
 
+
+## Repository note
+The PHP/MySQL implementation should be developed in a separate standalone repository named `zinnyworld`.
+Use `../tools/create_zinnyworld_repo.sh` from this repository root to bootstrap it locally before coding.
