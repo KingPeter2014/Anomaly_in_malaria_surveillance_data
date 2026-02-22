@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZinnyWorld - Clickable Wireframe</title>
+  <style>
+    :root {
+      --black: #000000;
+      --gold: #DFB011;
+      --champagne: #DBBB5F;
+      --bg: #f8f6ef;
+      --text: #1f1f1f;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: var(--bg); color: var(--text); }
+    header { background: var(--black); color: white; padding: 16px 24px; position: sticky; top: 0; }
+    nav a { color: var(--champagne); margin-right: 16px; text-decoration: none; font-weight: bold; }
+    .container { max-width: 1150px; margin: 0 auto; padding: 24px; }
+    .hero { background: linear-gradient(135deg, #111, #2b2b2b); color: white; border-left: 8px solid var(--gold); padding: 24px; border-radius: 12px; }
+    .hero h1 { margin-top: 0; }
+    .btn { display: inline-block; background: var(--gold); color: var(--black); padding: 10px 14px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-right: 8px; }
+    .grid { display: grid; gap: 16px; }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .card { background: white; border: 1px solid #ddd; border-top: 4px solid var(--champagne); border-radius: 10px; padding: 16px; }
+    section { margin-top: 28px; }
+    h2 { margin-bottom: 10px; }
+    .note { font-size: 0.92rem; color: #555; }
+    footer { margin-top: 30px; padding: 24px; text-align: center; font-size: 0.9rem; color: #444; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>ZinnyWorld Wireframe</strong>
+    <nav style="margin-top:8px;">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#product">Product</a>
+      <a href="#checkout">Checkout</a>
+      <a href="#account">Account</a>
+      <a href="#admin">Admin</a>
+      <a href="#api">API-ready</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <h1>ZinnyWorld — Premium Human Hair, Everyday Accessible</h1>
+      <p>Core categories: Wigs, Frontals, Closures. Palette: Black + Gold.</p>
+      <a class="btn" href="#shop">View Shop Flow</a>
+      <a class="btn" href="#admin">View Admin Flow</a>
+    </section>
+
+    <section id="shop">
+      <h2>Shop Page Wireframe</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Filters</h3>
+          <ul>
+            <li>Category: Wig / Frontal / Closure</li>
+            <li>Length: 10" to 32+"</li>
+            <li>Texture: Virgin Hair</li>
+            <li>Density: 250g / 300g</li>
+            <li>Lace: HD Lace</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Product Grid</h3>
+          <p>Cards show image/video badge, price, rating, stock label.</p>
+          <a class="btn" href="#product">Open Product Detail</a>
+        </article>
+        <article class="card">
+          <h3>Campaign Blocks</h3>
+          <p>Discount code banners for social promotions.</p>
+          <p class="note">Example: ZINNY10 for first-time checkout.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="product">
+      <h2>Product Detail Wireframe</h2>
+      <div class="grid grid-3">
+        <article class="card"><h3>Media Gallery</h3><p>Multiple images + optional videos.</p></article>
+        <article class="card"><h3>Variant Picker</h3><p>Length, color, density, lace; inventory shown per variant.</p></article>
+        <article class="card"><h3>Reviews</h3><p>Star ratings and customer comments.</p><a class="btn" href="#checkout">Go to Checkout</a></article>
+      </div>
+    </section>
+
+    <section id="checkout">
+      <h2>Cart + Checkout Wireframe</h2>
+      <div class="grid grid-3">
+        <article class="card"><h3>Guest Checkout</h3><p>Quick checkout with optional account creation prompt.</p></article>
+        <article class="card"><h3>Payments</h3><p>PayPal and bank transfer options.</p></article>
+        <article class="card"><h3>Shipping Zones</h3><p>Australia (default) + Nigeria bundles flow.</p></article>
+      </div>
+    </section>
+
+    <section id="account">
+      <h2>Account Wireframe</h2>
+      <div class="grid grid-3">
+        <article class="card"><h3>Order History</h3></article>
+        <article class="card"><h3>Saved Addresses</h3></article>
+        <article class="card"><h3>Profile & Reviews</h3></article>
+      </div>
+    </section>
+
+    <section id="admin">
+      <h2>Admin Dashboard Wireframe</h2>
+      <div class="grid grid-3">
+        <article class="card"><h3>Inventory Control</h3><p>Add/edit/remove stocks by variant.</p></article>
+        <article class="card"><h3>Low-Stock Alerts</h3><p>Threshold-based notifications.</p></article>
+        <article class="card"><h3>Reports</h3><p>Sales, stock movement, and customer insights.</p></article>
+      </div>
+    </section>
+
+    <section id="api">
+      <h2>API-Ready Structure (Future Mobile App)</h2>
+      <article class="card">
+        <p>Planned parallel endpoints:</p>
+        <ul>
+          <li><code>/api/v1/products</code></li>
+          <li><code>/api/v1/cart</code></li>
+          <li><code>/api/v1/orders</code></li>
+          <li><code>/api/v1/reviews</code></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    ZinnyWorld planning wireframe • Pre-coding deliverable
+  </footer>
+</body>
+</html>
